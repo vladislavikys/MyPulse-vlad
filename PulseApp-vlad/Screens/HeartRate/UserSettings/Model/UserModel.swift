@@ -6,10 +6,9 @@
 //
 
 import Foundation
-import RealmSwift
 
 // Перечисление для представления пола
-enum Gender: String, PersistableEnum {
+enum Gender: String {
     case male
     case female
     case none
@@ -27,7 +26,7 @@ enum Gender: String, PersistableEnum {
 }
 
 // Перечисление для представления единиц измерения
-enum Units: String, PersistableEnum {
+enum Units: String {
     case cmKg
     case inLbs
     
@@ -42,7 +41,7 @@ enum Units: String, PersistableEnum {
 }
 
 // Перечисление для представления полей о пользователе
-public enum AboutMeFieldModel: String, PersistableEnum {
+public enum AboutMeFieldModel: String {
     case gender
     case height
     case weight
@@ -62,22 +61,4 @@ public enum AboutMeFieldModel: String, PersistableEnum {
     }
 }
 
-// Модель пользователя
-@objcMembers
-class UserModel: Object {
-    @Persisted var id: String = UUID().uuidString
-    @Persisted var gender: Gender = .none
-    @Persisted var units: Units = .cmKg
-    @Persisted var height: Double = 0.0
-    @Persisted var weight: Double = 0.0
-    @Persisted var age: Int = 0
-    @Persisted var aboutMeWasShow = false
-    @Persisted var timeWhenAppWasInstall: Double = 0.0
-    @Persisted var showRating = false
-    
-    // Установка первичного ключа для Realm
-    override class func primaryKey() -> String? {
-        return #keyPath(UserModel.id)
-    }
-}
 

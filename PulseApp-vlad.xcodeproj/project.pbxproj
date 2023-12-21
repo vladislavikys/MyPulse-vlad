@@ -46,6 +46,11 @@
 		F56BFDE12B3450AF0066B1EC /* GenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDE02B3450AE0066B1EC /* GenderCell.swift */; };
 		F56BFDE32B3450C30066B1EC /* BaseAboutMeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDE22B3450C30066B1EC /* BaseAboutMeCollectionCell.swift */; };
 		F56BFDEA2B3451640066B1EC /* ManagerHeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDE92B3451640066B1EC /* ManagerHeartRate.swift */; };
+		F56BFDEC2B34545F0066B1EC /* AnalyzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDEB2B34545F0066B1EC /* AnalyzViewController.swift */; };
+		F56BFDEE2B3455C90066B1EC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDED2B3455C90066B1EC /* ProfileViewController.swift */; };
+		F56BFDF02B3455DA0066B1EC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDEF2B3455DA0066B1EC /* TestViewController.swift */; };
+		F56BFDF22B3455E70066B1EC /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDF12B3455E70066B1EC /* DietViewController.swift */; };
+		F56BFDF42B3455F80066B1EC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDF32B3455F80066B1EC /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +114,11 @@
 		F56BFDE02B3450AE0066B1EC /* GenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderCell.swift; sourceTree = "<group>"; };
 		F56BFDE22B3450C30066B1EC /* BaseAboutMeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAboutMeCollectionCell.swift; sourceTree = "<group>"; };
 		F56BFDE92B3451640066B1EC /* ManagerHeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerHeartRate.swift; sourceTree = "<group>"; };
+		F56BFDEB2B34545F0066B1EC /* AnalyzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzViewController.swift; sourceTree = "<group>"; };
+		F56BFDED2B3455C90066B1EC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F56BFDEF2B3455DA0066B1EC /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		F56BFDF12B3455E70066B1EC /* DietViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
+		F56BFDF32B3455F80066B1EC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +253,7 @@
 		F56BFD8E2B344C610066B1EC /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F56BFDED2B3455C90066B1EC /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -250,6 +261,7 @@
 		F56BFD8F2B344C6B0066B1EC /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				F56BFDEF2B3455DA0066B1EC /* TestViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -257,6 +269,7 @@
 		F56BFD902B344C740066B1EC /* Diet */ = {
 			isa = PBXGroup;
 			children = (
+				F56BFDF12B3455E70066B1EC /* DietViewController.swift */,
 			);
 			path = Diet;
 			sourceTree = "<group>";
@@ -264,6 +277,7 @@
 		F56BFD912B344C7C0066B1EC /* History */ = {
 			isa = PBXGroup;
 			children = (
+				F56BFDF32B3455F80066B1EC /* HistoryViewController.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -315,6 +329,7 @@
 		F56BFD962B344CC00066B1EC /* Analyzing */ = {
 			isa = PBXGroup;
 			children = (
+				F56BFDEB2B34545F0066B1EC /* AnalyzViewController.swift */,
 			);
 			path = Analyzing;
 			sourceTree = "<group>";
@@ -689,6 +704,7 @@
 				F56BFDBA2B344EE00066B1EC /* ReusableAlertView.swift in Sources */,
 				F56BFDCA2B344FB20066B1EC /* RealmExtension.swift in Sources */,
 				F56BFD582B3447EA0066B1EC /* SceneDelegate.swift in Sources */,
+				F56BFDF22B3455E70066B1EC /* DietViewController.swift in Sources */,
 				F56BFDD82B34504C0066B1EC /* UnitsView.swift in Sources */,
 				F56BFDEA2B3451640066B1EC /* ManagerHeartRate.swift in Sources */,
 				F56BFDE32B3450C30066B1EC /* BaseAboutMeCollectionCell.swift in Sources */,
@@ -701,13 +717,17 @@
 				F56BFDD02B344FE60066B1EC /* UserManager.swift in Sources */,
 				F56BFD9D2B344D4B0066B1EC /* BaseViewController.swift in Sources */,
 				F56BFDAC2B344E590066B1EC /* RightNumbersStack.swift in Sources */,
+				F56BFDEC2B34545F0066B1EC /* AnalyzViewController.swift in Sources */,
 				F56BFDAE2B344E720066B1EC /* ResultHeartRateStack.swift in Sources */,
 				F56BFDC62B344F870066B1EC /* BPMUserSettings.swift in Sources */,
 				F56BFDC82B344F990066B1EC /* BPMUserManager.swift in Sources */,
 				F56BFDC42B344F720066B1EC /* DefiningPulseType.swift in Sources */,
 				F56BFDCC2B344FC40066B1EC /* QueueManager.swift in Sources */,
 				F56BFDA12B344D9C0066B1EC /* Extension.swift in Sources */,
+				F56BFDEE2B3455C90066B1EC /* ProfileViewController.swift in Sources */,
 				F56BFDD42B34501E0066B1EC /* AboutMeViewController.swift in Sources */,
+				F56BFDF42B3455F80066B1EC /* HistoryViewController.swift in Sources */,
+				F56BFDF02B3455DA0066B1EC /* TestViewController.swift in Sources */,
 				F56BFDC22B344F5C0066B1EC /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

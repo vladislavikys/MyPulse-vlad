@@ -20,10 +20,6 @@ class TabController: UITabBarController{
         self.setupTabs()
     }
     
-//    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-//        tabBarController?.tabBar.isUserInteractionEnabled = false
-//    }
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         

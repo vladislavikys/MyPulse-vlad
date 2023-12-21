@@ -25,7 +25,7 @@ class BaseViewController: UIViewController {
         backgoundImageView.image = UIImage(named: "backgroundColor")
         backgoundImageView.translatesAutoresizingMaskIntoConstraints = false
         
-        titleLabel.font = .boldFont(size: 28)
+        titleLabel.font = .systemFont(ofSize: 28)
         titleLabel.textAlignment = .left
         titleLabel.textColor = UIColor(red: 0.114, green: 0.114, blue: 0.145, alpha: 1)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false

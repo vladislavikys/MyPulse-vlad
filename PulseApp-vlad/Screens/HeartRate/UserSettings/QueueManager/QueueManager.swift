@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import RealmSwift
 
 // Менеджер очереди для управления операциями записи в базу данных Realm
 class QueueManager {
