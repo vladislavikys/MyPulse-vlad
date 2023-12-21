@@ -23,13 +23,7 @@ class HeartRateController: BaseViewController {
     var startButton = PublicButton() // Кнопка запуска
     var reusableView: ReusableAlertView! // Переиспользуемое предупреждение
     var cameraAccess: ReusableAlertView = ReusableAlertView(type: .camera) // Предупреждение о доступе к камере
-    var measurementStartedFlag = false // Флаг, указывающий на начало измерения
-    var bpmForCalculating: [Int] = [] // Массив для хранения значений BPM
-    var validFrameCounter = 0 // Счетчик валидных кадров
-    var timer = Timer() // Таймер
-    var timerTwo = Timer() // Второй таймер
-    
-    
+
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -49,7 +43,6 @@ class HeartRateController: BaseViewController {
         setupProgressbar()
         setupRightNumbersStack()
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -71,8 +64,6 @@ class HeartRateController: BaseViewController {
         // Показывает изогнутую линию.
         crookedLineImage.isHidden = false
         
-    
-        
         // Скрывает стек с правильными значениями.
         rightNumbers.isHidden = true
         
@@ -83,7 +74,6 @@ class HeartRateController: BaseViewController {
         rightNumbers.isHidden = true
         scheduleLineImage.isHidden = true
     }
-    
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -101,18 +91,15 @@ class HeartRateController: BaseViewController {
         view.addSubview(crookedLineImage)
         view.addSubview(startButton)
         
-        
         // Инициализация и добавление resultStack на экран.
         resultStack = BasicStack()
         resultStack.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(resultStack)
         
-        
         // Настройка изображения scheduleLine.
         scheduleLineImage.image = UIImage(named: "scheduleLine")
         scheduleLineImage.translatesAutoresizingMaskIntoConstraints = false
         scheduleLineImage.contentMode = .scaleAspectFit
-        
         
         // Настройка кнопки infoButton.
         infoButton.translatesAutoresizingMaskIntoConstraints = false
@@ -179,24 +166,21 @@ class HeartRateController: BaseViewController {
         ])
     }
     
-    
     func startPulseAnimation() {
-        
+        // Implementation for starting pulse animation...
     }
     
-    
     func stopPulseAnimation() {
-        
+        // Implementation for stopping pulse animation...
     }
     
     func heartBeatAnimation() {
-       
+        // Implementation for heart beat animation...
     }
-    
     
     func stopHeartBeatAnimation() {
         DispatchQueue.main.async { [weak self] in
-            // Остановка анимации пульса для изображения сердца.
+            // Stop pulse animation for heart image.
             self?.resultStack.verticalStack.heartImage.subviews.forEach { $0.layer.removeAllAnimations() }
             self?.resultStack.verticalStack.heartImage.layer.removeAllAnimations()
             self?.resultStack.verticalStack.heartImage.layoutIfNeeded()
@@ -204,7 +188,7 @@ class HeartRateController: BaseViewController {
     }
     
     private func setupRightNumbersStack() {
-        // Инициализация и настройка стека для отображения чисел.
+        // Initialize and configure the stack for displaying numbers.
         rightNumbers = RightNumbersStack()
         rightNumbers.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(rightNumbers)
@@ -212,7 +196,7 @@ class HeartRateController: BaseViewController {
     }
     
     private func constraintsForRightNumbersStack() {
-        // Установка ограничений для стека справа.
+        // Set constraints for the stack on the right.
         NSLayoutConstraint.activate([
             rightNumbers.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             rightNumbers.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150),
@@ -222,7 +206,7 @@ class HeartRateController: BaseViewController {
     }
     
     private func setupProgressbar() {
-        // Инициализация и настройка полосы прогресса.
+        // Initialize and configure the progress bar.
         progressBar = ProgressBar(frame: CGRect(x: 0, y: 0, width: 220, height: 220))
         view.addSubview(progressBar)
         constraintsForProgressBar()
@@ -232,9 +216,8 @@ class HeartRateController: BaseViewController {
         }
     }
     
-    
     private func constraintsForProgressBar() {
-        // Установка ограничений для полосы прогресса.
+        // Set constraints for the progress bar.
         NSLayoutConstraint.activate([
             progressBar.topAnchor.constraint(equalTo: fingersLabel.topAnchor, constant: 50),
             progressBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -244,71 +227,71 @@ class HeartRateController: BaseViewController {
     }
     
     @objc private func startButtonAction() {
-        // Обработчик нажатия на кнопку "Start".
-        self.startPulsHeartRate()
+        // Создаем экземпляр AboutMeViewController
+        let aboutMeViewController = AboutMeViewController()
+
+        // Выполняем переход на экран AboutMeViewController
+        navigationController?.pushViewController(aboutMeViewController, animated: true)
     }
-    
-    private func startPulsHeartRate() {
-        
-    }
-    
+
+   
     
     private func initStartPulse() {
-        // Инициализация захвата видео и сессии измерения пульса.
+        // Initialize video capture and pulse measurement session.
         initVideoCapture()
         initCaptureSession()
     }
 }
 
-
-    // Расширение (extension) для обработки делегатов из различных экранов и представлений.
+// Extension for handling delegates from different screens and views.
 extension HeartRateController: AlertViewDelegate {
     
-        // Метод, вызываемый при нажатии на кнопку в представлении конфиденциальности.
-        func tappedActionInPrivacyView(forType type: PrivacyType) {
-            switch type {
-            case .preview:
-                // Скрыть предупреждение с анимацией и удалить затемненный фон.
-                hideAlertViewWithAnimation()
-                self.reusableView.darkView?.removeFromSuperview()
-            case .camera:
-                // Скрыть предупреждение с анимацией и удалить затемненный фон.
-                hideAlertViewWithAnimation()
-                self.reusableView.darkView?.removeFromSuperview()
-                
-                // Запрос доступа к камере и обработка ответа.
-                AVCaptureDevice.requestAccess(for: AVMediaType.video) { [unowned self] response in
-                    if response {
-                        // В случае получения доступа к камере выполнить следующие действия.
-                        DispatchQueue.main.async {
-                            self.fingersLabel.isHidden = false
-                            self.startButton.isHidden = true
-                            self.tutorialImage.isHidden = false
-                            self.scheduleLineImage.isHidden = true
-                            self.crookedLineImage.isHidden = true
-                            self.clueLabel.isHidden = false
-                        }
-                        self.initStartPulse()
+    // Method called when the button is pressed in the privacy view.
+    func tappedActionInPrivacyView(forType type: PrivacyType) {
+        switch type {
+        case .preview:
+            // Hide the warning with animation and remove the dark background.
+            hideAlertViewWithAnimation()
+            self.reusableView.darkView?.removeFromSuperview()
+        case .camera:
+            // Hide the warning with animation and remove the dark background.
+            hideAlertViewWithAnimation()
+            self.reusableView.darkView?.removeFromSuperview()
+            
+            // Request access to the camera and handle the response.
+            AVCaptureDevice.requestAccess(for: AVMediaType.video) { [unowned self] response in
+                if response {
+                    // If access to the camera is granted, perform the following actions.
+                    DispatchQueue.main.async {
+                        self.fingersLabel.isHidden = false
+                        self.startButton.isHidden = true
+                        self.tutorialImage.isHidden = false
+                        self.scheduleLineImage.isHidden = true
+                        self.crookedLineImage.isHidden = true
+                        self.clueLabel.isHidden = false
                     }
+                    self.initStartPulse()
                 }
             }
         }
+    }
 
-        // Метод, вызываемый после завершения этапа "About Me".
-        func completedAboutMeStage() {
-            if UserDefaults.showCameraAccess() {
-                // Показать представление доступа к камере.
-            } else {
-                // Показать предупреждение о отсутствии доступа к камере.
-                let alert = UIAlertController(title: NSLocalizedString("No access to camera", comment: ""),
-                                              message: NSLocalizedString("please allow access to the camera", comment: ""),
-                                              preferredStyle: .alert)
-                
-                let actionOK = UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .cancel, handler: nil)
-                alert.addAction(actionOK)
-                self.present(alert, animated: true, completion: nil)
-            }
+    // Method called after completing the "About Me" stage.
+    func completedAboutMeStage() {
+        if UserDefaults.showCameraAccess() {
+            // Show the camera access view.
+        } else {
+            // Show a warning about no camera access.
+            let alert = UIAlertController(title: NSLocalizedString("No access to camera", comment: ""),
+                                          message: NSLocalizedString("please allow access to the camera", comment: ""),
+                                          preferredStyle: .alert)
+            
+            let actionOK = UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .cancel, handler: nil)
+            alert.addAction(actionOK)
+            self.present(alert, animated: true, completion: nil)
         }
+    }
+    
     func closeResultViewAndSaveToDB() {
         print("v")
     }
