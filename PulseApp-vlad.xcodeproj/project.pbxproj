@@ -16,6 +16,36 @@
 		F56BFD6D2B3447EB0066B1EC /* PulseApp_vladTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFD6C2B3447EB0066B1EC /* PulseApp_vladTests.swift */; };
 		F56BFD772B3447EB0066B1EC /* PulseApp_vladUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFD762B3447EB0066B1EC /* PulseApp_vladUITests.swift */; };
 		F56BFD792B3447EB0066B1EC /* PulseApp_vladUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFD782B3447EB0066B1EC /* PulseApp_vladUITestsLaunchTests.swift */; };
+		F56BFD882B344BBF0066B1EC /* PublicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFD872B344BBF0066B1EC /* PublicButton.swift */; };
+		F56BFD8B2B344C2F0066B1EC /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFD8A2B344C2F0066B1EC /* TabController.swift */; };
+		F56BFD9D2B344D4B0066B1EC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFD9C2B344D4B0066B1EC /* BaseViewController.swift */; };
+		F56BFD9F2B344D790066B1EC /* HeartRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFD9E2B344D790066B1EC /* HeartRateController.swift */; };
+		F56BFDA12B344D9C0066B1EC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDA02B344D9C0066B1EC /* Extension.swift */; };
+		F56BFDA32B344DB60066B1EC /* HeartRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDA22B344DB60066B1EC /* HeartRateViewModel.swift */; };
+		F56BFDAA2B344E450066B1EC /* ResultStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDA92B344E440066B1EC /* ResultStack.swift */; };
+		F56BFDAC2B344E590066B1EC /* RightNumbersStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDAB2B344E590066B1EC /* RightNumbersStack.swift */; };
+		F56BFDAE2B344E720066B1EC /* ResultHeartRateStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDAD2B344E720066B1EC /* ResultHeartRateStack.swift */; };
+		F56BFDB02B344E830066B1EC /* TypeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDAF2B344E830066B1EC /* TypeResult.swift */; };
+		F56BFDB22B344E940066B1EC /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDB12B344E940066B1EC /* ResultScreen.swift */; };
+		F56BFDB42B344EA40066B1EC /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDB32B344EA40066B1EC /* ResultView.swift */; };
+		F56BFDB62B344EB40066B1EC /* PulsTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDB52B344EB40066B1EC /* PulsTypeButton.swift */; };
+		F56BFDB82B344EC80066B1EC /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDB72B344EC80066B1EC /* ProgressBar.swift */; };
+		F56BFDBA2B344EE00066B1EC /* ReusableAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDB92B344EE00066B1EC /* ReusableAlertView.swift */; };
+		F56BFDC22B344F5C0066B1EC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDC12B344F5C0066B1EC /* Settings.swift */; };
+		F56BFDC42B344F720066B1EC /* DefiningPulseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDC32B344F720066B1EC /* DefiningPulseType.swift */; };
+		F56BFDC62B344F870066B1EC /* BPMUserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDC52B344F870066B1EC /* BPMUserSettings.swift */; };
+		F56BFDC82B344F990066B1EC /* BPMUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDC72B344F980066B1EC /* BPMUserManager.swift */; };
+		F56BFDCA2B344FB20066B1EC /* RealmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDC92B344FB20066B1EC /* RealmExtension.swift */; };
+		F56BFDCC2B344FC40066B1EC /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDCB2B344FC40066B1EC /* QueueManager.swift */; };
+		F56BFDCE2B344FD60066B1EC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDCD2B344FD60066B1EC /* UserModel.swift */; };
+		F56BFDD02B344FE60066B1EC /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDCF2B344FE60066B1EC /* UserManager.swift */; };
+		F56BFDD42B34501E0066B1EC /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDD32B34501E0066B1EC /* AboutMeViewController.swift */; };
+		F56BFDD82B34504C0066B1EC /* UnitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDD72B34504C0066B1EC /* UnitsView.swift */; };
+		F56BFDDD2B3450850066B1EC /* AboutMeFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDDC2B3450850066B1EC /* AboutMeFieldCell.swift */; };
+		F56BFDDF2B34509B0066B1EC /* GenderFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDDE2B34509B0066B1EC /* GenderFieldView.swift */; };
+		F56BFDE12B3450AF0066B1EC /* GenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDE02B3450AE0066B1EC /* GenderCell.swift */; };
+		F56BFDE32B3450C30066B1EC /* BaseAboutMeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDE22B3450C30066B1EC /* BaseAboutMeCollectionCell.swift */; };
+		F56BFDEA2B3451640066B1EC /* ManagerHeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDE92B3451640066B1EC /* ManagerHeartRate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +79,36 @@
 		F56BFD722B3447EB0066B1EC /* PulseApp-vladUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PulseApp-vladUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56BFD762B3447EB0066B1EC /* PulseApp_vladUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseApp_vladUITests.swift; sourceTree = "<group>"; };
 		F56BFD782B3447EB0066B1EC /* PulseApp_vladUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseApp_vladUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F56BFD872B344BBF0066B1EC /* PublicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicButton.swift; sourceTree = "<group>"; };
+		F56BFD8A2B344C2F0066B1EC /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		F56BFD9C2B344D4B0066B1EC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F56BFD9E2B344D790066B1EC /* HeartRateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateController.swift; sourceTree = "<group>"; };
+		F56BFDA02B344D9C0066B1EC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F56BFDA22B344DB60066B1EC /* HeartRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewModel.swift; sourceTree = "<group>"; };
+		F56BFDA92B344E440066B1EC /* ResultStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultStack.swift; sourceTree = "<group>"; };
+		F56BFDAB2B344E590066B1EC /* RightNumbersStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightNumbersStack.swift; sourceTree = "<group>"; };
+		F56BFDAD2B344E720066B1EC /* ResultHeartRateStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultHeartRateStack.swift; sourceTree = "<group>"; };
+		F56BFDAF2B344E830066B1EC /* TypeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeResult.swift; sourceTree = "<group>"; };
+		F56BFDB12B344E940066B1EC /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
+		F56BFDB32B344EA40066B1EC /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		F56BFDB52B344EB40066B1EC /* PulsTypeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsTypeButton.swift; sourceTree = "<group>"; };
+		F56BFDB72B344EC80066B1EC /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		F56BFDB92B344EE00066B1EC /* ReusableAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableAlertView.swift; sourceTree = "<group>"; };
+		F56BFDC12B344F5C0066B1EC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F56BFDC32B344F720066B1EC /* DefiningPulseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefiningPulseType.swift; sourceTree = "<group>"; };
+		F56BFDC52B344F870066B1EC /* BPMUserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMUserSettings.swift; sourceTree = "<group>"; };
+		F56BFDC72B344F980066B1EC /* BPMUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMUserManager.swift; sourceTree = "<group>"; };
+		F56BFDC92B344FB20066B1EC /* RealmExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmExtension.swift; sourceTree = "<group>"; };
+		F56BFDCB2B344FC40066B1EC /* QueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
+		F56BFDCD2B344FD60066B1EC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F56BFDCF2B344FE60066B1EC /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		F56BFDD32B34501E0066B1EC /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		F56BFDD72B34504C0066B1EC /* UnitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsView.swift; sourceTree = "<group>"; };
+		F56BFDDC2B3450850066B1EC /* AboutMeFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeFieldCell.swift; sourceTree = "<group>"; };
+		F56BFDDE2B34509B0066B1EC /* GenderFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderFieldView.swift; sourceTree = "<group>"; };
+		F56BFDE02B3450AE0066B1EC /* GenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderCell.swift; sourceTree = "<group>"; };
+		F56BFDE22B3450C30066B1EC /* BaseAboutMeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAboutMeCollectionCell.swift; sourceTree = "<group>"; };
+		F56BFDE92B3451640066B1EC /* ManagerHeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerHeartRate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +159,11 @@
 		F56BFD542B3447EA0066B1EC /* PulseApp-vlad */ = {
 			isa = PBXGroup;
 			children = (
-				F56BFD552B3447EA0066B1EC /* AppDelegate.swift */,
-				F56BFD572B3447EA0066B1EC /* SceneDelegate.swift */,
+				F56BFD852B344B700066B1EC /* Appliaction */,
+				F56BFD862B344B7D0066B1EC /* PublicButton */,
+				F56BFD892B344C040066B1EC /* TabController */,
+				F56BFD8C2B344C4B0066B1EC /* Screens */,
+				F56BFDE42B3451240066B1EC /* Helpers */,
 				F56BFD592B3447EA0066B1EC /* ViewController.swift */,
 				F56BFD5B2B3447EA0066B1EC /* Main.storyboard */,
 				F56BFD5E2B3447EB0066B1EC /* Assets.xcassets */,
@@ -125,6 +188,361 @@
 				F56BFD782B3447EB0066B1EC /* PulseApp_vladUITestsLaunchTests.swift */,
 			);
 			path = "PulseApp-vladUITests";
+			sourceTree = "<group>";
+		};
+		F56BFD852B344B700066B1EC /* Appliaction */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFD552B3447EA0066B1EC /* AppDelegate.swift */,
+				F56BFD572B3447EA0066B1EC /* SceneDelegate.swift */,
+			);
+			path = Appliaction;
+			sourceTree = "<group>";
+		};
+		F56BFD862B344B7D0066B1EC /* PublicButton */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFD872B344BBF0066B1EC /* PublicButton.swift */,
+			);
+			path = PublicButton;
+			sourceTree = "<group>";
+		};
+		F56BFD892B344C040066B1EC /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFD8A2B344C2F0066B1EC /* TabController.swift */,
+			);
+			path = TabController;
+			sourceTree = "<group>";
+		};
+		F56BFD8C2B344C4B0066B1EC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFD9A2B344D200066B1EC /* BaseVC */,
+				F56BFD8D2B344C590066B1EC /* HeartRate */,
+				F56BFD912B344C7C0066B1EC /* History */,
+				F56BFD902B344C740066B1EC /* Diet */,
+				F56BFD8F2B344C6B0066B1EC /* Test */,
+				F56BFD8E2B344C610066B1EC /* Profile */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F56BFD8D2B344C590066B1EC /* HeartRate */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFD922B344C900066B1EC /* SetupController */,
+				F56BFD932B344C9B0066B1EC /* SetupViews */,
+				F56BFD942B344CA40066B1EC /* UserSettings */,
+				F56BFD952B344CB60066B1EC /* AboutMe */,
+				F56BFD962B344CC00066B1EC /* Analyzing */,
+			);
+			path = HeartRate;
+			sourceTree = "<group>";
+		};
+		F56BFD8E2B344C610066B1EC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F56BFD8F2B344C6B0066B1EC /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		F56BFD902B344C740066B1EC /* Diet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Diet;
+			sourceTree = "<group>";
+		};
+		F56BFD912B344C7C0066B1EC /* History */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		F56BFD922B344C900066B1EC /* SetupController */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFD972B344CEC0066B1EC /* Controller */,
+				F56BFD982B344CF50066B1EC /* Extension */,
+				F56BFD992B344CFF0066B1EC /* ViewModel */,
+			);
+			path = SetupController;
+			sourceTree = "<group>";
+		};
+		F56BFD932B344C9B0066B1EC /* SetupViews */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDA42B344DCE0066B1EC /* ResultStack */,
+				F56BFDA52B344DD80066B1EC /* RightNumbersStack */,
+				F56BFDA62B344DEF0066B1EC /* ResultView */,
+				F56BFDA72B344DF80066B1EC /* ProgressBar */,
+				F56BFDA82B344E010066B1EC /* ReusableAlertView */,
+			);
+			path = SetupViews;
+			sourceTree = "<group>";
+		};
+		F56BFD942B344CA40066B1EC /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDBB2B344EF90066B1EC /* UserDefaults */,
+				F56BFDBC2B344F020066B1EC /* DefiningPulseType */,
+				F56BFDBD2B344F090066B1EC /* BPM */,
+				F56BFDBE2B344F130066B1EC /* RealmExtension */,
+				F56BFDBF2B344F1B0066B1EC /* QueueManager */,
+				F56BFDC02B344F240066B1EC /* Model */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+		F56BFD952B344CB60066B1EC /* AboutMe */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDD22B3450160066B1EC /* Controller */,
+				F56BFDD12B34500A0066B1EC /* Views */,
+			);
+			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		F56BFD962B344CC00066B1EC /* Analyzing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Analyzing;
+			sourceTree = "<group>";
+		};
+		F56BFD972B344CEC0066B1EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFD9E2B344D790066B1EC /* HeartRateController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F56BFD982B344CF50066B1EC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDA02B344D9C0066B1EC /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F56BFD992B344CFF0066B1EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDA22B344DB60066B1EC /* HeartRateViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F56BFD9A2B344D200066B1EC /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFD9C2B344D4B0066B1EC /* BaseViewController.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		F56BFDA42B344DCE0066B1EC /* ResultStack */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDA92B344E440066B1EC /* ResultStack.swift */,
+			);
+			path = ResultStack;
+			sourceTree = "<group>";
+		};
+		F56BFDA52B344DD80066B1EC /* RightNumbersStack */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDAB2B344E590066B1EC /* RightNumbersStack.swift */,
+			);
+			path = RightNumbersStack;
+			sourceTree = "<group>";
+		};
+		F56BFDA62B344DEF0066B1EC /* ResultView */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDAD2B344E720066B1EC /* ResultHeartRateStack.swift */,
+				F56BFDAF2B344E830066B1EC /* TypeResult.swift */,
+				F56BFDB12B344E940066B1EC /* ResultScreen.swift */,
+				F56BFDB32B344EA40066B1EC /* ResultView.swift */,
+				F56BFDB52B344EB40066B1EC /* PulsTypeButton.swift */,
+			);
+			path = ResultView;
+			sourceTree = "<group>";
+		};
+		F56BFDA72B344DF80066B1EC /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDB72B344EC80066B1EC /* ProgressBar.swift */,
+			);
+			path = ProgressBar;
+			sourceTree = "<group>";
+		};
+		F56BFDA82B344E010066B1EC /* ReusableAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDB92B344EE00066B1EC /* ReusableAlertView.swift */,
+			);
+			path = ReusableAlertView;
+			sourceTree = "<group>";
+		};
+		F56BFDBB2B344EF90066B1EC /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDC12B344F5C0066B1EC /* Settings.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		F56BFDBC2B344F020066B1EC /* DefiningPulseType */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDC32B344F720066B1EC /* DefiningPulseType.swift */,
+			);
+			path = DefiningPulseType;
+			sourceTree = "<group>";
+		};
+		F56BFDBD2B344F090066B1EC /* BPM */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDC52B344F870066B1EC /* BPMUserSettings.swift */,
+				F56BFDC72B344F980066B1EC /* BPMUserManager.swift */,
+			);
+			path = BPM;
+			sourceTree = "<group>";
+		};
+		F56BFDBE2B344F130066B1EC /* RealmExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDC92B344FB20066B1EC /* RealmExtension.swift */,
+			);
+			path = RealmExtension;
+			sourceTree = "<group>";
+		};
+		F56BFDBF2B344F1B0066B1EC /* QueueManager */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDCB2B344FC40066B1EC /* QueueManager.swift */,
+			);
+			path = QueueManager;
+			sourceTree = "<group>";
+		};
+		F56BFDC02B344F240066B1EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDCD2B344FD60066B1EC /* UserModel.swift */,
+				F56BFDCF2B344FE60066B1EC /* UserManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F56BFDD12B34500A0066B1EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDD62B3450430066B1EC /* Units */,
+				F56BFDD52B3450390066B1EC /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F56BFDD22B3450160066B1EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDD32B34501E0066B1EC /* AboutMeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F56BFDD52B3450390066B1EC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDDB2B3450790066B1EC /* AboutMeFieldCell */,
+				F56BFDDA2B3450710066B1EC /* GenderCell */,
+				F56BFDD92B34506A0066B1EC /* Base */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F56BFDD62B3450430066B1EC /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDD72B34504C0066B1EC /* UnitsView.swift */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		F56BFDD92B34506A0066B1EC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDE22B3450C30066B1EC /* BaseAboutMeCollectionCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F56BFDDA2B3450710066B1EC /* GenderCell */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDDE2B34509B0066B1EC /* GenderFieldView.swift */,
+				F56BFDE02B3450AE0066B1EC /* GenderCell.swift */,
+			);
+			path = GenderCell;
+			sourceTree = "<group>";
+		};
+		F56BFDDB2B3450790066B1EC /* AboutMeFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDDC2B3450850066B1EC /* AboutMeFieldCell.swift */,
+			);
+			path = AboutMeFieldCell;
+			sourceTree = "<group>";
+		};
+		F56BFDE42B3451240066B1EC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDE82B34515A0066B1EC /* ManagerHeart */,
+				F56BFDE72B3451510066B1EC /* Detector Helpers */,
+				F56BFDE62B3451440066B1EC /* ExtensionHeart */,
+				F56BFDE52B34513D0066B1EC /* UtilitesHeart */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F56BFDE52B34513D0066B1EC /* UtilitesHeart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UtilitesHeart;
+			sourceTree = "<group>";
+		};
+		F56BFDE62B3451440066B1EC /* ExtensionHeart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExtensionHeart;
+			sourceTree = "<group>";
+		};
+		F56BFDE72B3451510066B1EC /* Detector Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Detector Helpers";
+			sourceTree = "<group>";
+		};
+		F56BFDE82B34515A0066B1EC /* ManagerHeart */ = {
+			isa = PBXGroup;
+			children = (
+				F56BFDE92B3451640066B1EC /* ManagerHeartRate.swift */,
+			);
+			path = ManagerHeart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +676,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56BFD8B2B344C2F0066B1EC /* TabController.swift in Sources */,
+				F56BFDB82B344EC80066B1EC /* ProgressBar.swift in Sources */,
+				F56BFDB62B344EB40066B1EC /* PulsTypeButton.swift in Sources */,
+				F56BFDAA2B344E450066B1EC /* ResultStack.swift in Sources */,
+				F56BFDB42B344EA40066B1EC /* ResultView.swift in Sources */,
+				F56BFD882B344BBF0066B1EC /* PublicButton.swift in Sources */,
 				F56BFD5A2B3447EA0066B1EC /* ViewController.swift in Sources */,
+				F56BFDE12B3450AF0066B1EC /* GenderCell.swift in Sources */,
 				F56BFD562B3447EA0066B1EC /* AppDelegate.swift in Sources */,
+				F56BFDCE2B344FD60066B1EC /* UserModel.swift in Sources */,
+				F56BFDBA2B344EE00066B1EC /* ReusableAlertView.swift in Sources */,
+				F56BFDCA2B344FB20066B1EC /* RealmExtension.swift in Sources */,
 				F56BFD582B3447EA0066B1EC /* SceneDelegate.swift in Sources */,
+				F56BFDD82B34504C0066B1EC /* UnitsView.swift in Sources */,
+				F56BFDEA2B3451640066B1EC /* ManagerHeartRate.swift in Sources */,
+				F56BFDE32B3450C30066B1EC /* BaseAboutMeCollectionCell.swift in Sources */,
+				F56BFDB22B344E940066B1EC /* ResultScreen.swift in Sources */,
+				F56BFD9F2B344D790066B1EC /* HeartRateController.swift in Sources */,
+				F56BFDA32B344DB60066B1EC /* HeartRateViewModel.swift in Sources */,
+				F56BFDDF2B34509B0066B1EC /* GenderFieldView.swift in Sources */,
+				F56BFDB02B344E830066B1EC /* TypeResult.swift in Sources */,
+				F56BFDDD2B3450850066B1EC /* AboutMeFieldCell.swift in Sources */,
+				F56BFDD02B344FE60066B1EC /* UserManager.swift in Sources */,
+				F56BFD9D2B344D4B0066B1EC /* BaseViewController.swift in Sources */,
+				F56BFDAC2B344E590066B1EC /* RightNumbersStack.swift in Sources */,
+				F56BFDAE2B344E720066B1EC /* ResultHeartRateStack.swift in Sources */,
+				F56BFDC62B344F870066B1EC /* BPMUserSettings.swift in Sources */,
+				F56BFDC82B344F990066B1EC /* BPMUserManager.swift in Sources */,
+				F56BFDC42B344F720066B1EC /* DefiningPulseType.swift in Sources */,
+				F56BFDCC2B344FC40066B1EC /* QueueManager.swift in Sources */,
+				F56BFDA12B344D9C0066B1EC /* Extension.swift in Sources */,
+				F56BFDD42B34501E0066B1EC /* AboutMeViewController.swift in Sources */,
+				F56BFDC22B344F5C0066B1EC /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
