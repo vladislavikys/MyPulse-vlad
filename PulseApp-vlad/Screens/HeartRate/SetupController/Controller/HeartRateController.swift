@@ -28,17 +28,12 @@ class HeartRateController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if UserDefaults.isFirstLaunch() {
-            showWelcomeView()
-            print("viewDidAppear - showWelcomeView")
-        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if UserDefaults.isFirstLaunch() {
             showWelcomeView()
-            print("viewDidLoad - showWelcomeView")
         }
         
         // Скрывает навигационную панель (бар) в текущем контроллере навигации (navigation controller) без анимации.
