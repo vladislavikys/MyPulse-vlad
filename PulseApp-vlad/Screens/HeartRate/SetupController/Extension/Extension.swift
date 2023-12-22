@@ -44,6 +44,46 @@ extension HeartRateController {
     // Запускает измерение пульса.
     func startMeasurement() {
     }
+
+    
+    func defaultState() {
+        
+    }
+    // MARK: - UI Presentation
+    
+    // Показывает представление приветствия.
+    func showWelcomeView() {
+        // Настраивает затемненный фон.
+        setupDarkView()
+        
+        // Создает экземпляр ReusableAlertView типа .preview.
+        reusableView = ReusableAlertView(type: .preview)
+        reusableView.delegate = self
+        reusableView.darkView = self.darkView
+        reusableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Добавляет представление к основному представлению таб-бара.
+        self.tabBarController?.view.addSubview(reusableView)
+        
+        // Задает начальные параметры для анимации.
+        let height = 335
+        reusableView.frame = CGRect(x: 0, y: self.tabBarController!.view.frame.height, width: self.tabBarController!.view.frame.width, height: CGFloat(height))
+        self.tabBarController?.view.layoutIfNeeded()
+        
+        // Используется анимация для плавного появления представления с использованием пружинного эффекта.
+        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations: {
+            // Уменьшает координату y представления, чтобы оно переместилось вверх (появилось).
+            self.reusableView.frame.origin.y -= CGFloat(height)
+        })
+        
+        // Задает ограничения для представления.
+        NSLayoutConstraint.activate([
+            reusableView.bottomAnchor.constraint(equalTo: self.tabBarController!.view.bottomAnchor),
+            reusableView.leadingAnchor.constraint(equalTo: self.tabBarController!.view.leadingAnchor),
+            reusableView.trailingAnchor.constraint(equalTo: self.tabBarController!.view.trailingAnchor),
+            reusableView.heightAnchor.constraint(equalToConstant: 335),
+        ])
+    }
     // Скрывает представление с анимацией.
     func hideAlertViewWithAnimation() {
         // Высота представления.
@@ -58,9 +98,26 @@ extension HeartRateController {
             self.reusableView.removeFromSuperview()
         }
     }
+
     
-    func defaultState() {
+    // Настройка затемненного фона.
+    private func setupDarkView() {
+        // Создание эффекта размытия.
+        let blurEffect = UIBlurEffect(style: .regular)
         
+        // Создание и настройка UIVisualEffectView с использованием эффекта размытия.
+        darkView = UIVisualEffectView(effect: blurEffect)
+        
+        // Установка размеров затемненного фона такими же, как и у view контроллера.
+        darkView?.frame = view.bounds
+        
+        // Установка автоматического изменения размеров для адаптации к изменениям размеров view контроллера.
+        darkView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        // Добавление затемненного фона на иерархию представлений.
+        if let darkView = darkView {
+            view.addSubview(darkView)
+        }
     }
 }
 

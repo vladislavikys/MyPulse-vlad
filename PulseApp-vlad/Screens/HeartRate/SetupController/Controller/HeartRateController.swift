@@ -21,16 +21,25 @@ class HeartRateController: BaseViewController {
     var rightNumbers: RightNumbersStack! // Стек для отображения правильных значений
     var progressBar: ProgressBar! // Прогресс-бар
     var startButton = PublicButton() // Кнопка запуска
+    
     var reusableView: ReusableAlertView! // Переиспользуемое предупреждение
     var cameraAccess: ReusableAlertView = ReusableAlertView(type: .camera) // Предупреждение о доступе к камере
 
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        if UserDefaults.isFirstLaunch() {
+            showWelcomeView()
+            print("viewDidAppear - showWelcomeView")
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if UserDefaults.isFirstLaunch() {
+            showWelcomeView()
+            print("viewDidLoad - showWelcomeView")
+        }
         
         // Скрывает навигационную панель (бар) в текущем контроллере навигации (navigation controller) без анимации.
         self.navigationController?.setNavigationBarHidden(true, animated: false)
@@ -167,15 +176,15 @@ class HeartRateController: BaseViewController {
     }
     
     func startPulseAnimation() {
-        // Implementation for starting pulse animation...
+        
     }
     
     func stopPulseAnimation() {
-        // Implementation for stopping pulse animation...
+        
     }
     
     func heartBeatAnimation() {
-        // Implementation for heart beat animation...
+        
     }
     
     func stopHeartBeatAnimation() {

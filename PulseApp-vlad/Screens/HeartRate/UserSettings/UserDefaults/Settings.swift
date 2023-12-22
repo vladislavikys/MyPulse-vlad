@@ -18,8 +18,9 @@ extension UserDefaults {
         let key = "isFirstLaunch"
         let isFirstLaunch = !UserDefaults.standard.bool(forKey: key)
         if isFirstLaunch {
-            UserDefaults.standard.setValue(true, forKey: key)
-            UserDefaults.standard.synchronize()
+            //UserDefaults.standard.setValue(true, forKey: key)
+           // UserDefaults.standard.synchronize()
+            print("isFirstLaunch")
         }
         return isFirstLaunch
     }
