@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40E66DBC519C2E7561158269 /* Pods_PulseApp_vladTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10AACEC835180F489CFD91C0 /* Pods_PulseApp_vladTests.framework */; };
+		A4AFCECFB01076064A64F421 /* Pods_PulseApp_vlad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD572874772EE00CED963D29 /* Pods_PulseApp_vlad.framework */; };
 		F56BFD562B3447EA0066B1EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFD552B3447EA0066B1EC /* AppDelegate.swift */; };
 		F56BFD582B3447EA0066B1EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFD572B3447EA0066B1EC /* SceneDelegate.swift */; };
 		F56BFD5A2B3447EA0066B1EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFD592B3447EA0066B1EC /* ViewController.swift */; };
@@ -51,6 +53,7 @@
 		F56BFDF02B3455DA0066B1EC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDEF2B3455DA0066B1EC /* TestViewController.swift */; };
 		F56BFDF22B3455E70066B1EC /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDF12B3455E70066B1EC /* DietViewController.swift */; };
 		F56BFDF42B3455F80066B1EC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56BFDF32B3455F80066B1EC /* HistoryViewController.swift */; };
+		FD18C7DDE8CDD5408E2C6874 /* Pods_PulseApp_vlad_PulseApp_vladUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959796C2BCB050651000F1B7 /* Pods_PulseApp_vlad_PulseApp_vladUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10AACEC835180F489CFD91C0 /* Pods_PulseApp_vladTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulseApp_vladTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B6E0FD77FF9D281BBC4657D /* Pods-PulseApp-vladTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulseApp-vladTests.debug.xcconfig"; path = "Target Support Files/Pods-PulseApp-vladTests/Pods-PulseApp-vladTests.debug.xcconfig"; sourceTree = "<group>"; };
+		48542826857E4A2B5DC513A1 /* Pods-PulseApp-vlad-PulseApp-vladUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulseApp-vlad-PulseApp-vladUITests.release.xcconfig"; path = "Target Support Files/Pods-PulseApp-vlad-PulseApp-vladUITests/Pods-PulseApp-vlad-PulseApp-vladUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F2E498E12A9E77FBF9508CA /* Pods-PulseApp-vlad-PulseApp-vladUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulseApp-vlad-PulseApp-vladUITests.debug.xcconfig"; path = "Target Support Files/Pods-PulseApp-vlad-PulseApp-vladUITests/Pods-PulseApp-vlad-PulseApp-vladUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		959796C2BCB050651000F1B7 /* Pods_PulseApp_vlad_PulseApp_vladUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulseApp_vlad_PulseApp_vladUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD023AC907259B9CFEF4AF4 /* Pods-PulseApp-vlad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulseApp-vlad.debug.xcconfig"; path = "Target Support Files/Pods-PulseApp-vlad/Pods-PulseApp-vlad.debug.xcconfig"; sourceTree = "<group>"; };
+		CD572874772EE00CED963D29 /* Pods_PulseApp_vlad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulseApp_vlad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D278B715ED12C818C29369FF /* Pods-PulseApp-vlad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulseApp-vlad.release.xcconfig"; path = "Target Support Files/Pods-PulseApp-vlad/Pods-PulseApp-vlad.release.xcconfig"; sourceTree = "<group>"; };
+		D8E333A78E880DA93201243A /* Pods-PulseApp-vladTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulseApp-vladTests.release.xcconfig"; path = "Target Support Files/Pods-PulseApp-vladTests/Pods-PulseApp-vladTests.release.xcconfig"; sourceTree = "<group>"; };
 		F56BFD522B3447EA0066B1EC /* PulseApp-vlad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PulseApp-vlad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56BFD552B3447EA0066B1EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F56BFD572B3447EA0066B1EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4AFCECFB01076064A64F421 /* Pods_PulseApp_vlad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E66DBC519C2E7561158269 /* Pods_PulseApp_vladTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,12 +154,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD18C7DDE8CDD5408E2C6874 /* Pods_PulseApp_vlad_PulseApp_vladUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5977C6C3A55B87BFC8CE3851 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFD023AC907259B9CFEF4AF4 /* Pods-PulseApp-vlad.debug.xcconfig */,
+				D278B715ED12C818C29369FF /* Pods-PulseApp-vlad.release.xcconfig */,
+				6F2E498E12A9E77FBF9508CA /* Pods-PulseApp-vlad-PulseApp-vladUITests.debug.xcconfig */,
+				48542826857E4A2B5DC513A1 /* Pods-PulseApp-vlad-PulseApp-vladUITests.release.xcconfig */,
+				1B6E0FD77FF9D281BBC4657D /* Pods-PulseApp-vladTests.debug.xcconfig */,
+				D8E333A78E880DA93201243A /* Pods-PulseApp-vladTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB8D8A70D1CA55099C9A9F75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD572874772EE00CED963D29 /* Pods_PulseApp_vlad.framework */,
+				959796C2BCB050651000F1B7 /* Pods_PulseApp_vlad_PulseApp_vladUITests.framework */,
+				10AACEC835180F489CFD91C0 /* Pods_PulseApp_vladTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F56BFD492B3447EA0066B1EC = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +192,8 @@
 				F56BFD6B2B3447EB0066B1EC /* PulseApp-vladTests */,
 				F56BFD752B3447EB0066B1EC /* PulseApp-vladUITests */,
 				F56BFD532B3447EA0066B1EC /* Products */,
+				5977C6C3A55B87BFC8CE3851 /* Pods */,
+				DB8D8A70D1CA55099C9A9F75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -567,9 +608,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F56BFD7C2B3447EB0066B1EC /* Build configuration list for PBXNativeTarget "PulseApp-vlad" */;
 			buildPhases = (
+				BA3340BF75C1190CF6074EED /* [CP] Check Pods Manifest.lock */,
 				F56BFD4E2B3447EA0066B1EC /* Sources */,
 				F56BFD4F2B3447EA0066B1EC /* Frameworks */,
 				F56BFD502B3447EA0066B1EC /* Resources */,
+				F8FF94C7A3CA71E14765FAB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -584,6 +627,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F56BFD7F2B3447EB0066B1EC /* Build configuration list for PBXNativeTarget "PulseApp-vladTests" */;
 			buildPhases = (
+				32CF078E908EB06535401471 /* [CP] Check Pods Manifest.lock */,
 				F56BFD642B3447EB0066B1EC /* Sources */,
 				F56BFD652B3447EB0066B1EC /* Frameworks */,
 				F56BFD662B3447EB0066B1EC /* Resources */,
@@ -602,9 +646,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F56BFD822B3447EB0066B1EC /* Build configuration list for PBXNativeTarget "PulseApp-vladUITests" */;
 			buildPhases = (
+				C5176A0431CDDF4DBC83A902 /* [CP] Check Pods Manifest.lock */,
 				F56BFD6E2B3447EB0066B1EC /* Sources */,
 				F56BFD6F2B3447EB0066B1EC /* Frameworks */,
 				F56BFD702B3447EB0066B1EC /* Resources */,
+				D913796DF776156FEDCBEC42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -685,6 +731,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32CF078E908EB06535401471 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PulseApp-vladTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA3340BF75C1190CF6074EED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PulseApp-vlad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5176A0431CDDF4DBC83A902 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PulseApp-vlad-PulseApp-vladUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D913796DF776156FEDCBEC42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PulseApp-vlad-PulseApp-vladUITests/Pods-PulseApp-vlad-PulseApp-vladUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PulseApp-vlad-PulseApp-vladUITests/Pods-PulseApp-vlad-PulseApp-vladUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PulseApp-vlad-PulseApp-vladUITests/Pods-PulseApp-vlad-PulseApp-vladUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8FF94C7A3CA71E14765FAB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PulseApp-vlad/Pods-PulseApp-vlad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PulseApp-vlad/Pods-PulseApp-vlad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PulseApp-vlad/Pods-PulseApp-vlad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F56BFD4E2B3447EA0066B1EC /* Sources */ = {
@@ -905,6 +1054,7 @@
 		};
 		F56BFD7D2B3447EB0066B1EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFD023AC907259B9CFEF4AF4 /* Pods-PulseApp-vlad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -933,6 +1083,7 @@
 		};
 		F56BFD7E2B3447EB0066B1EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D278B715ED12C818C29369FF /* Pods-PulseApp-vlad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -961,6 +1112,7 @@
 		};
 		F56BFD802B3447EB0066B1EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B6E0FD77FF9D281BBC4657D /* Pods-PulseApp-vladTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -981,6 +1133,7 @@
 		};
 		F56BFD812B3447EB0066B1EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8E333A78E880DA93201243A /* Pods-PulseApp-vladTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1001,6 +1154,7 @@
 		};
 		F56BFD832B3447EB0066B1EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F2E498E12A9E77FBF9508CA /* Pods-PulseApp-vlad-PulseApp-vladUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1019,6 +1173,7 @@
 		};
 		F56BFD842B3447EB0066B1EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48542826857E4A2B5DC513A1 /* Pods-PulseApp-vlad-PulseApp-vladUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

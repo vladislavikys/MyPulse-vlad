@@ -1,0 +1,6 @@
+framework module Pods_PulseApp_vlad {
+  umbrella header "Pods-PulseApp-vlad-umbrella.h"
+
+  export *
+  module * { export * }
+}

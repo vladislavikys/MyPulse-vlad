@@ -85,6 +85,89 @@ class HeartRateController: BaseViewController {
         deinitCaptureSession()
     }
     
+    
+    
+    func startPulseAnimation() {
+        
+    }
+    
+    func stopPulseAnimation() {
+        
+    }
+    
+    func heartBeatAnimation() {
+        
+    }
+    
+    func stopHeartBeatAnimation() {
+    
+    }
+    
+    private func setupRightNumbersStack() {
+        // Initialize and configure the stack for displaying numbers.
+        rightNumbers = RightNumbersStack()
+        rightNumbers.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(rightNumbers)
+        NSLayoutConstraint.activate([
+            rightNumbers.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            rightNumbers.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150),
+            rightNumbers.heightAnchor.constraint(equalToConstant: 200),
+            rightNumbers.widthAnchor.constraint(equalToConstant: 30)
+        ])
+    }
+
+    
+    private func setupProgressbar() {
+        // Initialize and configure the progress bar.
+        progressBar = ProgressBar(frame: CGRect(x: 0, y: 0, width: 220, height: 220))
+        view.addSubview(progressBar)
+        NSLayoutConstraint.activate([
+            progressBar.topAnchor.constraint(equalTo: fingersLabel.topAnchor, constant: 50),
+            progressBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            progressBar.heightAnchor.constraint(equalToConstant: 220),
+            progressBar.widthAnchor.constraint(equalToConstant: 220)
+        ])
+        
+        if UserDefaults.isFirstLaunch() {
+            print("isFirstLaunch")
+        }
+    }
+    
+    
+    @objc private func startButtonAction() {
+        let aboutMeViewController = AboutMeViewController()
+        aboutMeViewController.modalPresentationStyle = .fullScreen
+        present(aboutMeViewController, animated: true, completion: nil)
+    }
+
+    private func initStartPulse() {
+    }
+}
+
+// Extension for handling delegates from different screens and views.
+extension HeartRateController: AlertViewDelegate {
+    
+    // Method called when the button is pressed in the privacy view.
+    func tappedActionInPrivacyView(forType type: PrivacyType) {
+        switch type {
+        case .preview:
+            // Hide the warning with animation and remove the dark background.
+            hideAlertViewWithAnimation()
+            self.reusableView.darkView?.removeFromSuperview()
+        case .camera:
+            print("camera case ")
+            
+        }
+    }
+
+    // Method called after completing the "About Me" stage.
+    func completedAboutMeStage() {
+        
+    }
+    
+    func closeResultViewAndSaveToDB() {
+        
+    }
     private func setupUI() {
         // Добавление UI-компонентов на экран.
         view.addSubview(infoButton)
@@ -168,135 +251,5 @@ class HeartRateController: BaseViewController {
             startButton.heightAnchor.constraint(equalToConstant: 68),
             startButton.widthAnchor.constraint(equalToConstant: 300),
         ])
-    }
-    
-    func startPulseAnimation() {
-        
-    }
-    
-    func stopPulseAnimation() {
-        
-    }
-    
-    func heartBeatAnimation() {
-        
-    }
-    
-    func stopHeartBeatAnimation() {
-        DispatchQueue.main.async { [weak self] in
-            // Stop pulse animation for heart image.
-            self?.resultStack.verticalStack.heartImage.subviews.forEach { $0.layer.removeAllAnimations() }
-            self?.resultStack.verticalStack.heartImage.layer.removeAllAnimations()
-            self?.resultStack.verticalStack.heartImage.layoutIfNeeded()
-        }
-    }
-    
-    private func setupRightNumbersStack() {
-        // Initialize and configure the stack for displaying numbers.
-        rightNumbers = RightNumbersStack()
-        rightNumbers.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(rightNumbers)
-        constraintsForRightNumbersStack()
-    }
-    
-    private func constraintsForRightNumbersStack() {
-        // Set constraints for the stack on the right.
-        NSLayoutConstraint.activate([
-            rightNumbers.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-            rightNumbers.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150),
-            rightNumbers.heightAnchor.constraint(equalToConstant: 200),
-            rightNumbers.widthAnchor.constraint(equalToConstant: 30)
-        ])
-    }
-    
-    private func setupProgressbar() {
-        // Initialize and configure the progress bar.
-        progressBar = ProgressBar(frame: CGRect(x: 0, y: 0, width: 220, height: 220))
-        view.addSubview(progressBar)
-        constraintsForProgressBar()
-        
-        if UserDefaults.isFirstLaunch() {
-            print("isFirstLaunch")
-        }
-    }
-    
-    private func constraintsForProgressBar() {
-        // Set constraints for the progress bar.
-        NSLayoutConstraint.activate([
-            progressBar.topAnchor.constraint(equalTo: fingersLabel.topAnchor, constant: 50),
-            progressBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            progressBar.heightAnchor.constraint(equalToConstant: 220),
-            progressBar.widthAnchor.constraint(equalToConstant: 220)
-        ])
-    }
-    
-    @objc private func startButtonAction() {
-        // Создаем экземпляр AboutMeViewController
-        let aboutMeViewController = AboutMeViewController()
-
-        // Выполняем переход на экран AboutMeViewController
-        navigationController?.pushViewController(aboutMeViewController, animated: true)
-    }
-
-   
-    
-    private func initStartPulse() {
-        // Initialize video capture and pulse measurement session.
-        initVideoCapture()
-        initCaptureSession()
-    }
-}
-
-// Extension for handling delegates from different screens and views.
-extension HeartRateController: AlertViewDelegate {
-    
-    // Method called when the button is pressed in the privacy view.
-    func tappedActionInPrivacyView(forType type: PrivacyType) {
-        switch type {
-        case .preview:
-            // Hide the warning with animation and remove the dark background.
-            hideAlertViewWithAnimation()
-            self.reusableView.darkView?.removeFromSuperview()
-        case .camera:
-            // Hide the warning with animation and remove the dark background.
-            hideAlertViewWithAnimation()
-            self.reusableView.darkView?.removeFromSuperview()
-            
-            // Request access to the camera and handle the response.
-            AVCaptureDevice.requestAccess(for: AVMediaType.video) { [unowned self] response in
-                if response {
-                    // If access to the camera is granted, perform the following actions.
-                    DispatchQueue.main.async {
-                        self.fingersLabel.isHidden = false
-                        self.startButton.isHidden = true
-                        self.tutorialImage.isHidden = false
-                        self.scheduleLineImage.isHidden = true
-                        self.crookedLineImage.isHidden = true
-                        self.clueLabel.isHidden = false
-                    }
-                    self.initStartPulse()
-                }
-            }
-        }
-    }
-
-    // Method called after completing the "About Me" stage.
-    func completedAboutMeStage() {
-        if UserDefaults.showCameraAccess() {
-            // Show the camera access view.
-        } else {
-            // Show a warning about no camera access.
-            let alert = UIAlertController(title: NSLocalizedString("No access to camera", comment: ""),
-                                          message: NSLocalizedString("please allow access to the camera", comment: ""),
-                                          preferredStyle: .alert)
-            
-            let actionOK = UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .cancel, handler: nil)
-            alert.addAction(actionOK)
-            self.present(alert, animated: true, completion: nil)
-        }
-    }
-    
-    func closeResultViewAndSaveToDB() {
-        print("v")
     }
 }

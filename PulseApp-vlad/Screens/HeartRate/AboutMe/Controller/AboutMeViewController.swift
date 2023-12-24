@@ -29,19 +29,14 @@ class AboutMeViewController: BaseViewController {
     private var unitsIsSelected: Units = .cmKg {
         didSet {
             // Обновление визуального состояния кнопок выбора единиц измерения
-            if unitsIsSelected == .cmKg {
-                cmKgView.unitsChangeStateSelected(isSelected: true)
-                cmKgView.changeColor(isSelected: true)
-                inLbsView.unitsChangeStateSelected(isSelected: false)
-                inLbsView.changeColor(isSelected: false)
-            } else {
-                cmKgView.unitsChangeStateSelected(isSelected: false)
-                cmKgView.changeColor(isSelected: false)
-                inLbsView.unitsChangeStateSelected(isSelected: true)
-                inLbsView.changeColor(isSelected: true)
-            }
+            cmKgView.unitsChangeStateSelected(isSelected: unitsIsSelected == .cmKg)
+            cmKgView.changeColor(isSelected: unitsIsSelected == .cmKg)
+
+            inLbsView.unitsChangeStateSelected(isSelected: unitsIsSelected == .inLbs)
+            inLbsView.changeColor(isSelected: unitsIsSelected == .inLbs)
         }
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,7 +119,7 @@ class AboutMeViewController: BaseViewController {
     
     @objc func actionContinueButton() {
         // Возвращаемся на предыдущий экран (если он существует в стеке)
-        navigationController?.popViewController(animated: true)
+        dismiss(animated: true)
     }
 }
 
